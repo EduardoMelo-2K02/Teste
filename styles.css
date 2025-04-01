@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+  }
+  
+/* Título */
+.titulo {
+    text-align: center;
+    color: #15127A;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.Tooth {
+    position: absolute;
+    right: 300px;
+    top: 7px;
+    width: 100px;
+    height: auto;
+}
+
+.enfeite {
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    width: 60px;
+}
+
+.Star {
+    position: absolute;
+    top: -75px;
+    right: 10px;
+    width: 110px;
+}
+
+.depoimentos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    column-gap: 0px;
+    justify-items: center;
+    width: 1200px;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 80px;
+}
+
+.depoimento_individual {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.circulo {
+    width: 35px; /* Ligeiramente maior para melhor proporção */
+    height: 45px;
+    position: relative;
+    margin-left: -45px;
+    top: 12px;
+    z-index: 1;
+}
+
+.aspas {
+    width: 25px; /* Ajuste o tamanho das aspas */
+    height: auto;
+    position: relative;
+    top: 3px; /* Ajuste fino da posição das aspas dentro do círculo */
+    left: -11px;
+    z-index: 2;
+}
+
+.usuario img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 118px;
+    left: 3px;
+    border: 3px solid #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.retangulo {
+    position: relative;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    margin-top: -40px;
+}
+
+.triangulo{
+    margin-top: -15px;
+}
+
+.texto {
+    text-align: justify;
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    right: 20px;
+    width: 440px;
+}
+
+.texto p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #15127A;
+    margin-top: -40px;
+}
+
+.user-text {
+    position: absolute;
+    top: 130px;
+    left: 80px;
+}
+
+.user-text h4 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 16px;
+    color: #15127A;
+}
+
+.user-text .cliente {
+    font-family: 'Montserrat', sans-serif;
+    color: #2589DB;
+    font-size: 14px;
+}
+
+.enfeite2 {
+    position: absolute;
+    bottom: 80px;
+    right: 1px;
+    width: 100px;
+}
+
+.enfeite3 {
+    position: relative;
+    left: 35%;
+    bottom: -40px;
+    width: 100px;
+}
+
+@media (max-width: 768px) {
+    .depoimentos {
+        grid-template-columns: 1fr;
+    }
+
+    .depoimento_individual {
+        width: 90%;
+    }
+
+    .usuario img {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
